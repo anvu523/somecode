@@ -1,23 +1,35 @@
 export default class RouterConstants {
-  // Customer router paths
-  static CUSTOMER_ROOT_PATH = "/customer";
-  static BOOKING_ROUTER_PATH = `${this.CUSTOMER_ROOT_PATH}/bookings`;
-  static BOOKING_MENU_ROUTER_PATH = `${this.BOOKING_ROUTER_PATH}/menus`;
-  static BOOKING_OPTION_ROUTER_PATH = `${this.BOOKING_ROUTER_PATH}/options`;
-  static BOOKING_CALENDAR_ROUTER_PATH = `${this.BOOKING_ROUTER_PATH}/calendar`;
-  static PERSONAL_INFO_ROUTER_PATH = `${this.BOOKING_ROUTER_PATH}/personal-info`;
-  static CONTENT_CONFIRMATION_ROUTER_PATH = `${this.BOOKING_ROUTER_PATH}/content-confirmation`;
-  static BOOKING_SUCCESS_ROUTER_PATH = `${this.BOOKING_ROUTER_PATH}/booking-success`;
-  static BOOKING_HISTORY_ROUTER_PATH = `${this.CUSTOMER_ROOT_PATH}/booking-history`;
+  // Common routers path
+  static LOGIN_ROUTER_PATH = "/login";
+  static CLINIC_ROOT_ROUTER_PATH = "/clinic";
+  static DASHBOARD_ROUTER_PATH = `${this.CLINIC_ROOT_ROUTER_PATH}/dashboard`;
+  static CAMPAIGN_ROUTER_PATH = `${this.CLINIC_ROOT_ROUTER_PATH}/campaigns`;
+  static CAMPAIGN_RESULT_ROUTER_PATH = `${this.CLINIC_ROOT_ROUTER_PATH}/campaigns/123`;
+  static BOOKING_ROUTER_ROUTER_PATH = `${this.CLINIC_ROOT_ROUTER_PATH}/bookings`;
+  static CUSTOMER_ROUTER_ROUTER_PATH = `${this.CLINIC_ROOT_ROUTER_PATH}/customers`;
+  static CUSTOMER_CREATE_ROUTER_PATH = `${this.CLINIC_ROOT_ROUTER_PATH}/customers/new`;
+  static CUSTOMER_DETAIL_ROUTER_PATH = `${this.CLINIC_ROOT_ROUTER_PATH}/customers/:id`;
+  static SETTING_ROUTER_ROUTER_PATH = `${this.CLINIC_ROOT_ROUTER_PATH}/settings`;
+  static SEGMENT_WORKFLOW_ROUTER_PATH = `${this.CLINIC_ROOT_ROUTER_PATH}/segment-workflows`;
+  static RICH_MENU_ROUTER_PATH = `${this.CLINIC_ROOT_ROUTER_PATH}/rich-menu`;
+  static RICH_MENU_REGISTRATION_ROUTER_PATH = `${this.CLINIC_ROOT_ROUTER_PATH}/rich-menu/new`;
+  static MESSAGE_NEW_ROUTER_PATH = `${this.CLINIC_ROOT_ROUTER_PATH}/messages/new`;
+  static MESSAGE_ROUTER_PATH = `${this.CLINIC_ROOT_ROUTER_PATH}/messages`;
+  static DIRECT_MESSAGE_ROUTER_PATH = `${this.CLINIC_ROOT_ROUTER_PATH}/direct_messages`;
 
-  // Customer router names
-  static CUSTOMER_ROUTER_NAME = "Customer";
-  static BOOKING_ROUTER_NAME = "Customer Bookings";
-  static BOOKING_MENU_ROUTER_NAME = "Customer Menu Bookings";
-  static BOOKING_OPTION_ROUTER_NAME = "Customer Option Bookings";
-  static BOOKING_CALENDAR_ROUTER_NAME = "Customer Calendar Bookings";
-  static PERSONAL_INFO_ROUTER_NAME = "Personal Information";
-  static CONTENT_CONFIRMATION_ROUTER_NAME = "Content Confirmation";
-  static BOOKING_SUCCESS_ROUTER_NAME = "Booking Success";
-  static BOOKING_HISTORY_ROUTER_NAME = "Booking History";
+  // Router name
+  static LOGIN_ROUTER_NAME = "Login";
+  static DASHBOARD_ROUTER_NAME = "Dashboard";
+  static BOOKING_ROUTER_NAME = "Bookings";
+  static CAMPAIGN_ROUTER_NAME = "Campaigns";
+  static CAMPAIGN_RESULT_ROUTER_NAME = "Campaign Result";
+  static CUSTOMER_ROUTER_NAME = "Customers";
+  static CUSTOMER_DETAIL_ROUTER_NAME = "Customer Detail";
+  static SETTING_ROUTER_NAME = "Settings";
+  static SEGMENT_WORKFLOW_ROUTER_NAME = "Segment Workflow";
+  static RICH_MENU_ROUTER_NAME = "Rich Menu";
+  static RICH_MENU_REGISTRATION_ROUTER_NAME = "Rich Menu Registration";
+  static MESSAGE_NEW_ROUTER_NAME = "Message New";
+  static MESSAGE_ROUTER_NAME = "Message";
+  static DIRECT_MESSAGE_ROUTER_NAME = "Direct Message";
 }
